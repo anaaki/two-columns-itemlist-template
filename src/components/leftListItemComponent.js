@@ -9,7 +9,7 @@ class LeftItemComponent extends Component {
   
   render () {
     const targetItems = this.props.items.filter((item)=>{
-      return item.position === 'left'
+      return item.position === 'left' && item.visible
     });
     return <ListItem items={targetItems} switchPosition={this.props.switchPosition} />
   }
